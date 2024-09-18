@@ -1,0 +1,3 @@
+este es el servidor realizado por mongo 
+el archivo .env es el archivo de variables de entorno cambiar la url de mongo por una local en caso de no funcionar 
+pero esta global es decir 0.0.0.0/0
