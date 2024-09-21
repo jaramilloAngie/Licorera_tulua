@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const loginForm = document.getElementById('loginForm');
-    const USERS_URL = 'http://localhost:5000/api/users'; // URL de la ruta para obtener todos los usuarios
+    const USERS_URL = 'http://localhost:5000/api/users/login'; // URL de la ruta para obtener todos los usuarios
   
     loginForm.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
           alert('Inicio de sesión exitoso');
           // Redirigir a la página principal o a donde desees después del inicio de sesión
           window.location.href = 'index.html';
+          localStorage.setItem('user', JSON.stringify(data.user));
         } else {
           alert('Error: ' + data.message);
         }

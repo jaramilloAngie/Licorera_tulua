@@ -13,7 +13,18 @@ const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
-
+let botonInicioSesion = document.getElementById("incio-sesion")
+let botonCrearUsuraio = document.getElementById("crear-usuario")
+let imgUser = document.getElementById("img-user")
+let nameUser = document.getElementById("nomb-user")
+let user = JSON.parse(localStorage.getItem("user"))
+if (user) {
+    botonInicioSesion.classList.add("hidden")
+    botonCrearUsuraio.classList.add("hidden")
+    imgUser.classList.remove("hidden")
+    nameUser.classList.remove("hidden")
+    nameUser.textContent = user.nombre
+}
 
 botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
     aside.classList.remove("aside-visible");
