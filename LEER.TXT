@@ -1,0 +1,12 @@
+LA PAGINA SIN LOS AVANCES ESTA EN LA CARPETA QUE DICE PRINCIPAL 
+PARA INICIAR LOS AVANCES ABRIR DOS TERMINALES UNA PARA CLIENTE Y OTRA PARA SERVIDOR 
+TERMINAL #1
+cd cliente
+npm start
+
+terminal #2
+cd servidor 
+npm run dev "si quieren hacer cambios o ajustar algo si solo es para correr el codigo pueden utilizar "
+npm start
+
+para mejorar la carga y por seguridad de las imagenes se utilizo cloudary 
