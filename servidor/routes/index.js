@@ -28,6 +28,9 @@ const orderController = require('../controller/order/order.controller');
 const allOrderController = require('../controller/order/allOrder.controller');
 const deleteUser = require('../controller/user/deleteUser');
 const deleteProduct = require('../controller/product/deleteProduct');
+const allBanners = require('../controller/banner/allBanner');
+const DeleteBannerController = require('../controller/banner/deleteBaner');
+const UploadBannerController = require('../controller/banner/uploadBaner');
 
 router.post('/signup', userSignUpController);
 router.post('/signin', userSignInController);
@@ -40,6 +43,11 @@ router.post('/verify-code', userSignUpController);
 router.get("/all-user",authToken,allUsers);
 router.post("/update-user",authToken,updateUser);
 router.post("/delete-user",authToken,deleteUser);
+
+router.get("/all-banners",authToken,allBanners);
+router.post("/upload-Banner",authToken,UploadBannerController);
+router.post("/delete-Banner", authToken, DeleteBannerController); 
+
 
 //subir producto
 router.post("/upload-product",authToken,UploadProductController);

@@ -104,7 +104,20 @@ const SummaryApi = {
     allOrder : {
         url : `${backendDomin}/api/all-order`,
         method : 'get'
+    },
+    uploadBanner: {
+        url : `${backendDomin}/api/upload-Banner`,
+        method : 'post'
+    },
+    deleteBanner : {
+        url : `${backendDomin}/api/delete-Banner`,
+        method : 'post'
+    },
+    allBanner : {
+        url : `${backendDomin}/api/all-banners`,
+        method : 'get'
     }
+
 }
 
 

@@ -14,7 +14,7 @@ const AdminProductCard = ({ data, fetchdata }) => {
         if (confirmDelete) {
             try {
                 const response = await fetch(SummaryApi.deleteProduct.url, {
-                    method: 'POST',
+                    method: SummaryApi.deleteProduct.method,
                     credentials : 'include',
                     headers: {
                         'Content-Type': 'application/json'

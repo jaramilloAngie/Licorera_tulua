@@ -16,6 +16,7 @@ import Cancel from '../pages/Cancel'
 import OrderPage from '../pages/OrderPage'
 import AllOrder from '../pages/AllOrder'
 import Chat from '../pages/Chat'
+import AllBanner from '../pages/AllBanner'
 
 
 const router = createBrowserRouter([
@@ -82,6 +83,10 @@ const router = createBrowserRouter([
                     {
                         path: "all-products",
                         element: <AllProducts/>
+                    },
+                    {
+                        path: "all-banners",
+                        element: <AllBanner/>
                     },
                     {
                         path : "all-orders",
