@@ -1,7 +1,4 @@
-import React, { useContext, useRef, useState } from 'react'
-import Logo from './Logo'
-import { FaSearch } from "react-icons/fa";
-import { CiSearch } from "react-icons/ci";
+import React, { useContext, useState } from 'react'
 import { GrSearch } from "react-icons/gr";
 import { FaUserCircle } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
@@ -12,8 +9,7 @@ import { toast } from "react-toastify";
 import { setUserDetails } from "../store/userSlice"
 import ROLE from '../common/role';
 import Context from '../context';
-import AvisoImage from "../assest/fiesta.jpg";
-import { IoMdChatboxes } from "react-icons/io";
+
 
 const Header = () => {
 
@@ -26,7 +22,6 @@ const Header = () => {
   const URLSearch = new URLSearchParams(searchInput?.search)
   const searchQuery = URLSearch.getAll("q")
   const [search,setSearch] = useState(searchQuery)
-  const [showBanner, setShowBanner] = useState(true);
 
 
 
@@ -62,18 +57,6 @@ const Header = () => {
           navigate("/search")
         }
         }
-
-        // Crear una referencia para el elemento floatingWindow
-  const floatingWindowRef = useRef(null);
-
-  const mayorEdad = () => {
-    setShowBanner(false);
-  };
-
-  const menorEdad = () => {
-    // Implementar lógica para menores de edad si es necesario
-    toast.error('Acceso denegado para menores de edad');
-  };
 
 
   return (
@@ -143,7 +126,7 @@ const Header = () => {
 
                             )
                         }
-                        <Link to={'/order'} className='whitespace-nowrap hidden md:block hover:bg-slate-200 rounded-full p-2' onClick={()=>setMenuDisplay(preve => !preve)}>Ordenes</Link>                        
+                        <Link to={'/order'} className='whitespace-nowrap hidden md:block hover:bg-slate-200 rounded-full p-2' onClick={()=>setMenuDisplay(preve => !preve)}>Perfil</Link>                        
                         </nav>
                 </div>
 

@@ -28,7 +28,7 @@ const CategoryList = () => {
     }, []);
 
     return (
-        <div className='bg-slate-300'>
+        <div className='bg-green'>
             <div className='container mx-auto p-3'>
                 <div className='flex items-center gap-3 justify-between overflow-scroll scrollbar-none'>
                     {
@@ -44,14 +44,14 @@ const CategoryList = () => {
                                 );
                             })  
                         ) : (
-                            <div className="hidden md:flex space-x-16"> {/* Oculta en pantallas pequeñas y muestra en medianas y grandes */}
+                            <div className="hidden md:flex space-x-24"> {/* Oculta en pantallas pequeñas y muestra en medianas y grandes */}
                                 <Link to={"/"}>
-                                    <p className='capitalize text-lg text-green font-bold'>Inicio</p>
+                                    <p className='capitalize text-lg text-white font-bold'>Inicio</p>
                                 </Link>
                                 {/* Mapeamos sobre 'categoryProduct' */}
                                 {categoryProduct.map((product, index) => (
                                     <Link to={`/product-category?category=${product.category}`} className='cursor-pointer' key={index}>
-                                        <p className='capitalize text-lg text-green font-bold'>{product.category}</p>
+                                        <p className='capitalize text-lg text-white font-bold'>{product.category}</p>
                                     </Link>
                                 ))}
                             </div>

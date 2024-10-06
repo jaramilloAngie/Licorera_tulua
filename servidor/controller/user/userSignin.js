@@ -22,6 +22,11 @@ async function userSignInController(req, res){
             throw new Error("El usuario no esta registrado")
         }
 
+        // Verificar si el usuario está bloqueado
+        if (user.status === 'Bloqueado') {
+            throw new Error("Su cuenta está bloqueada.");
+        }
+
         const checkPassword = await bcrypt.compare(password,user.password)
 
        console.log("checkPassoword",checkPassword)

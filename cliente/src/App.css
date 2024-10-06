@@ -128,8 +128,8 @@ a {
 /** Estilos de la ventana flotante si es mayor de edad **/
 /** Floating window styles **/
 .floating-window {
-    width: 40vw; /* Ancho completo de la pantalla */
-    height: 90vh; /* Altura completa de la pantalla */
+    width: 40vw;
+    height: 90vh;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -137,21 +137,62 @@ a {
     background-color: white;
     border: 2px solid #000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;/* Limita el ancho al 100% de la pantalla */
+    z-index: 1000;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    
+    justify-content: space-between;
 }
 
-.close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 20px;
-    cursor: pointer;
+/* Imagen dentro del contenedor */
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Media Queries para hacerlo responsivo */
+@media (max-width: 768px) {
+    .floating-window {
+        width: 80vw;
+        height: auto; /* Permitir que la altura se ajuste según el contenido */
+        padding: 15px;
+    }
+
+    .floating-window h2 {
+        font-size: 24px;
+    }
+
+    .button1, .button2 {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .image-container img {
+        max-height: 200px; /* Limitar la altura de la imagen en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .floating-window {
+        width: 90vw;
+        padding: 10px;
+    }
+
+    .floating-window h2 {
+        font-size: 18px;
+    }
+
+    .button1, .button2 {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .image-container img {
+        max-height: 150px;
+    }
 }
 
 .image-container img {
@@ -200,4 +241,25 @@ a {
     border: none;
     color: white;
     font-size: 16px;
+}
+/* Fondo negro para el overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con transparencia */
+    z-index: 999; /* Asegúrate de que esté al frente */
+    pointer-events: auto; /* Habilitar interacción en el fondo oscuro */
+}
+
+/* Desactivar interacción con el contenido de fondo */
+.no-interaction {
+    pointer-events: none; /* Desactiva la interacción con el resto de la página */
+}
+
+.floating-window {
+    z-index: 1000; /* Asegúrate de que esté por encima del overlay */
+    pointer-events: auto; /* Habilitar interacción en la ventana */
 }

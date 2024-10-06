@@ -26,6 +26,8 @@ const paymentController = require('../controller/order/paymentController');
 const webhooks = require('../controller/order/webhook');
 const orderController = require('../controller/order/order.controller');
 const allOrderController = require('../controller/order/allOrder.controller');
+const deleteUser = require('../controller/user/deleteUser');
+const deleteProduct = require('../controller/product/deleteProduct');
 
 router.post('/signup', userSignUpController);
 router.post('/signin', userSignInController);
@@ -37,6 +39,7 @@ router.post('/verify-code', userSignUpController);
 //panel admin
 router.get("/all-user",authToken,allUsers);
 router.post("/update-user",authToken,updateUser);
+router.post("/delete-user",authToken,deleteUser);
 
 //subir producto
 router.post("/upload-product",authToken,UploadProductController);
@@ -47,6 +50,7 @@ router.post("/category-product",getCategoryWiseProduct);
 router.post("/product-details",getProductDetails);
 router.get("/search",searchProduct);
 router.post("/filter-product",filterProductController);
+router.post("/delete-product",authToken,deleteProduct);
 
 //carrito
 router.post("/addtocart",authToken,addToCartController);

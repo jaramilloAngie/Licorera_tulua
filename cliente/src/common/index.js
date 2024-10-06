@@ -77,6 +77,14 @@ const SummaryApi = {
         url : `${backendDomin}/api/delete-cart-product`,
         method : 'post'
     },
+    deleteUser: {
+        url: `${backendDomin}/api/delete-user`,
+        method: 'post'
+    },
+    deleteProduct: {
+        url: `${backendDomin}/api/delete-product`,
+        method: 'post'
+    },
     searchProduct : {
         url : `${backendDomin}/api/search`,
         method : 'get'

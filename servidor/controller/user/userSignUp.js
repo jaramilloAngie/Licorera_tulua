@@ -9,7 +9,7 @@ const existe = 0;
 
 async function userSignUpController(req, res) {
     try {
-        const { name, email, password, verificationCode } = req.body;
+        const { name, age , phone , email , password , profilepic , verificationCode  } = req.body;
         const existingUser = await userModel.findOne({ email });
         // Validar que el email y el código de verificación se proporcionen si se está verificando el código
         if (verificationCode) {
@@ -30,7 +30,10 @@ async function userSignUpController(req, res) {
 
                 const payload = {
                     name,
+                    age,
+                    phone,
                     email,
+                    profilepic,
                     role: "Cliente",
                     password: hashPassword,
                 };

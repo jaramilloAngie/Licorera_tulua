@@ -3,7 +3,6 @@ import  { useNavigate, useParams } from 'react-router-dom'
 import SummaryApi from '../common'
 import { FaStar } from "react-icons/fa";
 import { FaStarHalf } from "react-icons/fa";
-import VerticalCardProduct from '../components/VerticalCardProduct';
 import CategroyWiseProductDisplay from '../components/CategoryWiseProductDisplay';
 import addToCart from '../helpers/addToCart';
 import Context from '../context';
@@ -97,19 +96,19 @@ const ProductDetails = () => {
   return (
     <div className='container mx-auto p-4'>
 
-      <div className='min-h-[200px] flex flex-col lg:flex-row gap-4'>
+      <div className='min-h-[200px] flex flex-col lg:flex-row gap-4 rounded-md p-2 border-2 border-slate-400'>
           {/***product Image */}
-          <div className='h-96 flex flex-col lg:flex-row-reverse gap-4'>
+          <div className='h-96 flex flex-col lg:flex-row-reverse gap-4 '>
 
-              <div className='h-[300px] w-[300px] lg:h-96 lg:w-96 bg-slate-200 relative p-2'>
+              <div className='h-[300px] w-[300px] lg:h-96 lg:w-96 bg-slate-200 relative p-2 rounded-md border-2 border-green-600'>
                   <img src={activeImage} className='h-full w-full object-scale-down mix-blend-multiply' onMouseMove={handleZoomImage} onMouseLeave={handleLeaveImageZoom}/>
 
                     {/**product zoom */}
                     {
                       zoomImage && (
-                        <div className='hidden lg:block absolute min-w-[500px] overflow-hidden min-h-[400px] bg-slate-200 p-1 -right-[510px] top-0'>
+                        <div className='hidden lg:block absolute min-w-[500px] overflow-hidden min-h-[400px] bg-slate-200 p-1 -right-[510px] top-0 '>
                           <div
-                            className='w-full h-full min-h-[400px] min-w-[500px] mix-blend-multiply scale-150'
+                            className='w-full h-full min-h-[400px] min-w-[500px] mix-blend-multiply scale-150 '
                             style={{
                               background : `url(${activeImage})`,
                               backgroundRepeat : 'no-repeat',
@@ -128,7 +127,7 @@ const ProductDetails = () => {
               <div className='h-full'>
                   {
                     loading ? (
-                      <div className='flex gap-2 lg:flex-col overflow-scroll scrollbar-none h-full'>
+                      <div className='flex gap-2 lg:flex-col overflow-scroll scrollbar-none h-full '>
                         {
                           productImageListLoading.map((el,index) =>{
                             return(
@@ -144,7 +143,7 @@ const ProductDetails = () => {
                         {
                           data?.productImage?.map((imgURL,index) =>{
                             return(
-                              <div className='h-20 w-20 bg-slate-200 rounded p-1' key={imgURL}>
+                              <div className='h-20 w-20 bg-slate-200 p-1 rounded-md border-2 border-green-600' key={imgURL}>
                                 <img src={imgURL} className='w-full h-full object-scale-down mix-blend-multiply cursor-pointer' onMouseEnter={()=>handleMouseEnterProduct(imgURL)}  onClick={()=>handleMouseEnterProduct(imgURL)}/>
                               </div>
                             )
@@ -185,9 +184,9 @@ const ProductDetails = () => {
               </div>
             ) : 
             (
-              <div className='flex flex-col gap-1'>
+              <div className='flex flex-col gap-1 '>
                 {data?.brandName && (
-  <p className='bg-green-200 text-green-600 px-2 rounded-full inline-block w-fit'>
+  <p className='bg-green-200 text-green-600 px-2 rounded-full inline-block w-fit '>
     {data.brandName}
   </p>
 )}

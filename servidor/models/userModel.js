@@ -3,6 +3,8 @@ const mongoose = require('mongoose')
 
 const userSchema = new mongoose.Schema({
     name : String,
+    age : Number,
+    phone : Number,
     email : {
         type : String,
         unique : true,
@@ -13,7 +15,7 @@ const userSchema = new mongoose.Schema({
     role : String,
     status : {
         type : String,
-        default : "activo"
+        default : "Activo"
     }
 },{
     timestamps : true

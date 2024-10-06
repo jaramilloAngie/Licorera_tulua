@@ -28,7 +28,7 @@ const AllOrder = () => {
       <div className='h-[calc(100vh)] overflow-y-scroll'>
         {
            !data[0] && (
-            <p>No Order available</p>
+            <p>No hay nada</p>
            )
         }
   

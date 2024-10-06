@@ -19,7 +19,8 @@ const UploadProduct = ({
     productImage : [],
     description : "",
     price : "",
-    sellingPrice : ""
+    sellingPrice : "",
+    stock : ""
   })
   const [openFullScreenImage,setOpenFullScreenImage] = useState(false)
   const [fullScreenImage,setFullScreenImage] = useState("")
@@ -99,7 +100,7 @@ const UploadProduct = ({
 
             <div className='flex justify-between items-center pb-3'>
                 <h2 className='font-bold text-lg'>Subir producto</h2>
-                <div className='w-fit ml-auto text-2xl hover:text-green-600 cursor-pointer' onClick={onClose}>
+                <div className='w-fit ml-auto text-2xl hover:text-green cursor-pointer' onClick={onClose}>
                     <CgClose/>
                 </div>
             </div>
@@ -207,6 +208,18 @@ const UploadProduct = ({
                 placeholder='Ingrese el precio de venta'
                 value={data.sellingPrice} 
                 name='sellingPrice'
+                onChange={handleOnChange}
+                className='p-2 bg-slate-100 border rounded'
+                required
+              />
+
+<label htmlFor='stock' className='mt-3'>Cantidad de productos :</label>
+              <input 
+                type='number' 
+                id='stock' 
+                placeholder='Ingrese la cantidad de productos'
+                value={data.stock} 
+                name='stock'
                 onChange={handleOnChange}
                 className='p-2 bg-slate-100 border rounded'
                 required

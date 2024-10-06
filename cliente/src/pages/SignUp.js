@@ -66,7 +66,7 @@ const SignUp = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ email: data.email, verificationCode: data.verificationCode , name: data.name, phone: data.phone, age: data.age, password: data.password }),
+          body: JSON.stringify({ email: data.email, verificationCode: data.verificationCode , name: data.name, phone: data.phone, age: data.age, password: data.password  , profilepic: data.profilepic }),
         });
 
         const result = await response.json();
@@ -121,7 +121,7 @@ const SignUp = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ email: data.email, name: data.name, phone: data.phone, age: data.age, password: data.password }),
+          body: JSON.stringify({ email: data.email, name: data.name, phone: data.phone, age: data.age, password: data.password , profilepic: data.profilepic }),
         });
 
         const codeApi = await codeResponse.json();
