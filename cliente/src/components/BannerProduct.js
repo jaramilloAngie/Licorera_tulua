@@ -11,25 +11,24 @@ const BannerProduct = () => {
         try {
             const response = await fetch(SummaryApi.allBanner.url, {
                 method: SummaryApi.allBanner.method,
-                credentials: 'include',
                 headers: {
-                    'Authorization': `Bearer ${localStorage.getItem('token')}`,
                     'Content-Type': 'application/json',
                 },
             });
-
+    
             if (!response.ok) {
                 throw new Error('Error al cargar los banners');
             }
-
+    
             const dataResponse = await response.json();
             setBanners(dataResponse.data || []);
-            setLoading(false); // Actualiza el estado de carga
+            setLoading(false);
         } catch (error) {
             console.error('Error al cargar banners:', error);
-            setLoading(false); // Asegúrate de actualizar el estado de carga en caso de error
+            setLoading(false);
         }
     };
+    
 
     const nextImage = () => {
         if (banners.length === 0) return; // Evitar si no hay banners

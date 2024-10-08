@@ -17,6 +17,7 @@ import OrderPage from '../pages/OrderPage'
 import AllOrder from '../pages/AllOrder'
 import Chat from '../pages/Chat'
 import AllBanner from '../pages/AllBanner'
+import ResetPassword from '../pages/ResetPassword'
 
 
 const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path: "forgot-password",
                 element: <ForgotPassword/>
+            },
+            {
+                path: "reset-password",
+                element: <ResetPassword/>
             },
             {
                 path: "sign-up",

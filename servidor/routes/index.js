@@ -31,6 +31,7 @@ const deleteProduct = require('../controller/product/deleteProduct');
 const allBanners = require('../controller/banner/allBanner');
 const DeleteBannerController = require('../controller/banner/deleteBaner');
 const UploadBannerController = require('../controller/banner/uploadBaner');
+const { forgotPasswordController, resetPasswordController } = require('../controller/user/forgot-password');
 
 router.post('/signup', userSignUpController);
 router.post('/signin', userSignInController);
@@ -38,13 +39,16 @@ router.get("/user-details", authToken, userDetailsController);
 router.get("/userLogout", userLogout);
 router.post('/send-verification-code', userSignUpController);
 router.post('/verify-code', userSignUpController); 
+router.post('/forgot-password', forgotPasswordController);
+router.post('/reset-password', resetPasswordController);
+
 
 //panel admin
 router.get("/all-user",authToken,allUsers);
 router.post("/update-user",authToken,updateUser);
 router.post("/delete-user",authToken,deleteUser);
 
-router.get("/all-banners",authToken,allBanners);
+router.get("/all-banners",allBanners);
 router.post("/upload-Banner",authToken,UploadBannerController);
 router.post("/delete-Banner", authToken, DeleteBannerController); 
 

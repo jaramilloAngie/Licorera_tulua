@@ -9,6 +9,14 @@ const SummaryApi = {
         url: `${backendDomin}/api/verify-code`, // Asegúrate de que esta URL sea correcta
         method: "post"
     },
+    forgotPassword: {
+        url: `${backendDomin}/api/forgot-password`, // Asegúrate de que esta URL sea correcta
+        method: "post"
+    },
+    resetPassword: {
+        url: `${backendDomin}/api/reset-password`, // Asegúrate de que esta URL sea correcta
+        method: "post"
+    },
     signUP : {
         url : `${backendDomin}/api/signup`,
         method : "post"
