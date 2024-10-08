@@ -742,3 +742,87 @@ overlay {
 .btn:hover {
     background-color: #26670c;
 }
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #26670c;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-button i {
+    font-size: 24px;
+}
+
+/* Estilo de la ventana del chatbot */
+.chatbot-window {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    display: none;
+    flex-direction: column;
+}
+
+.chatbot-header {
+    background-color: #26670c;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-body {
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.chatbot-footer {
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.chatbot-footer input {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.chatbot-footer button {
+    background-color: #26670c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.chatbot-close {
+    cursor: pointer;
+}
+/* Estilo del botón flotante de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background-color: #26670c;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.whatsapp-button i {
+    font-size: 24px;
+}

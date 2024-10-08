@@ -2,7 +2,7 @@
     {
         "id": "licores-01",
         "titulo": "Blanco del Valle",
-        "imagen": "./img/licores/aguardiente.jpg",
+        "imagen": "../img/licores/aguardiente.jpg",
         "categoria": {
             "nombre": "Licores",
             "id": "Licores"
@@ -12,7 +12,7 @@
     {
         "id": "licores-02",
         "titulo": "Buchanan's",
-        "imagen": "./img/licores/buchanans.jpg",
+        "imagen": "../img/licores/buchanans.jpg",
         "categoria": {
             "nombre": "Licores",
             "id": "Licores"
@@ -22,7 +22,7 @@
     {
         "id": "licores-03",
         "titulo": "Ginebra",
-        "imagen": "./img/licores/ginebra.jpg",
+        "imagen": "../img/licores/ginebra.jpg",
         "categoria": {
             "nombre": "Licores",
             "id": "Licores"
@@ -32,7 +32,7 @@
     {
         "id": "licores-04",
         "titulo": "Tequila Don Julio",
-        "imagen": "./img/licores/tequila_don_julio.jpg",
+        "imagen": "../img/licores/tequila_don_julio.jpg",
         "categoria": {
             "nombre": "Licores",
             "id": "Licores"
@@ -42,7 +42,7 @@
     {
         "id": "cervezas-01",
         "titulo": "Corona",
-        "imagen": "./img/cervezas/corona.jpg",
+        "imagen": "../img/cervezas/corona.jpg",
         "categoria": {
             "nombre": "Cervezas",
             "id": "Cervezas"
@@ -52,7 +52,7 @@
     {
         "id": "cervezas-02",
         "titulo": "Poker",
-        "imagen": "./img/cervezas/poker.jpg",
+        "imagen": "../img/cervezas/poker.jpg",
         "categoria": {
             "nombre": "Cervezas",
             "id": "Cervezas"
@@ -62,7 +62,7 @@
     {
         "id": "cervezas-03",
         "titulo": "Budweiser",
-        "imagen": "./img/cervezas/bws.jpg",
+        "imagen": "../img/cervezas/bws.jpg",
         "categoria": {
             "nombre": "Cervezas",
             "id": "Cervezas"
@@ -72,7 +72,7 @@
     {
         "id": "cervezas-04",
         "titulo": "Heineken",
-        "imagen": "./img/cervezas/heineken.jpg",
+        "imagen": "../img/cervezas/heineken.jpg",
         "categoria": {
             "nombre": "Cervezas",
             "id": "Cervezas"
@@ -82,7 +82,7 @@
     {
         "id": "vinos-01",
         "titulo": "Begani",
-        "imagen": "./img/vinos/begani.jpg",
+        "imagen": "../img/vinos/begani.jpg",
         "categoria": {
             "nombre": "Vinos",
             "id": "Vinos"
@@ -92,7 +92,7 @@
     {
         "id": "vinos-02",
         "titulo": "Carmen",
-        "imagen": "./img/vinos/carmen.jpg",
+        "imagen": "../img/vinos/carmen.jpg",
         "categoria": {
             "nombre": "Vinos",
             "id": "Vinos"
@@ -102,7 +102,7 @@
     {
         "id": "vinos-03",
         "titulo": "Garugele ",
-        "imagen": "./img/vinos/garugele.jpg",
+        "imagen": "../img/vinos/garugele.jpg",
         "categoria": {
             "nombre": "Vinos",
             "id": "Vinos"
@@ -112,7 +112,7 @@
     {
         "id": "vinos-04",
         "titulo": "Penfolds",
-        "imagen": "./img/vinos/penfolds.jpg",
+        "imagen": "../img/vinos/penfolds.jpg",
         "categoria": {
             "nombre": "Vinos",
             "id": "Vinos"
@@ -122,7 +122,7 @@
     {
         "id": "bebidas_sin_alcohol-01",
         "titulo": "Agua",
-        "imagen": "./img/bebidas_sin_alcohol/agua.jpg",
+        "imagen": "../img/bebidas_sin_alcohol/agua.jpg",
         "categoria": {
             "nombre": "Bebidas Sin Alcohol",
             "id": "Bebidas Sin Alcohol"
@@ -132,7 +132,7 @@
     {
         "id": "bebidas_sin_alcohol-02",
         "titulo": "Gatorade",
-        "imagen": "./img/bebidas_sin_alcohol/gatorade.jpg",
+        "imagen": "../img/bebidas_sin_alcohol/gatorade.jpg",
         "categoria": {
             "nombre": "Bebidas Sin Alcohol",
             "id": "Bebidas Sin Alcohol"
@@ -142,7 +142,7 @@
     {
         "id": "bebidas_sin_alcohol-03",
         "titulo": "Jugo Hit",
-        "imagen": "./img/bebidas_sin_alcohol/hit.jpg",
+        "imagen": "../img/bebidas_sin_alcohol/hit.jpg",
         "categoria": {
             "nombre": "Bebidas Sin Alcohol",
             "id": "Bebidas Sin Alcohol"
@@ -152,7 +152,7 @@
     {
         "id": "bebidas_sin_alcohol-04",
         "titulo": "Tea",
-        "imagen": "./img/bebidas_sin_alcohol/tea.jpg",
+        "imagen": "../img/bebidas_sin_alcohol/tea.jpg",
         "categoria": {
             "nombre": "Bebidas Sin Alcohol",
             "id": "Bebidas Sin Alcohol"
@@ -162,7 +162,7 @@
     {
         "id": "minimarket-01",
         "titulo": "Cigarrillo",
-        "imagen": "./img/minimarket/cigarrillo.jpg",
+        "imagen": "../img/minimarket/cigarrillo.jpg",
         "categoria": {
             "nombre": "Minimarket",
             "id": "Minimarket"
@@ -172,7 +172,7 @@
     {
         "id": "minimarket-02",
         "titulo": "Chocolatina",
-        "imagen": "./img/minimarket/jet.jpg",
+        "imagen": "../img/minimarket/jet.jpg",
         "categoria": {
             "nombre": "Minimarket",
             "id": "Minimarket"
@@ -182,7 +182,7 @@
     {
         "id": "minimarket-03",
         "titulo": "Papas Fritas",
-        "imagen": "./img/minimarket/papas.jpg",
+        "imagen": "../img/minimarket/papas.jpg",
         "categoria": {
             "nombre": "Minimarket",
             "id": "Minimarket"
@@ -192,7 +192,7 @@
     {
         "id": "minimarket-04",
         "titulo": "Chicles",
-        "imagen": "./img/minimarket/trident.jpg",
+        "imagen": "../img/minimarket/trident.jpg",
         "categoria": {
             "nombre": "Minimarket",
             "id": "Minimarket"

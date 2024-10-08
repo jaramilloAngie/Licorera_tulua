@@ -15,7 +15,7 @@
         <span class="close" id="closeButton">&times;</span>
         <h2>Bienvenido</h2>
         <div class="image-container">
-            <img src="./img/fiesta.jpg" alt="Imagen">
+            <img src="../img/fiesta.jpg" alt="Imagen">
         </div>
         <p class="message-top">Para ingresar a este sitio web debes ser mayor de edad</p>
         <button id="button1" class="button1">Eres mayor de +18</button>
@@ -104,5 +104,31 @@
     <script src="./js/main.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/carrito.js"></script>
+
+    <!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/573167809782" target="_blank" id="whatsapp-button" class="whatsapp-button">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+    <!-- Botón flotante para el chatbot -->
+<div id="chatbot-button" class="chatbot-button">
+    <i class="bi bi-chat-dots"></i>
+</div>
+
+<!-- Ventana del chatbot -->
+<div id="chatbot-window" class="chatbot-window">
+    <div class="chatbot-header">
+        <h4>Asistente Virtual</h4>
+        <span id="chatbot-close" class="chatbot-close">&times;</span>
+    </div>
+    <div class="chatbot-body">
+        <p>¡Hola! ¿En qué puedo ayudarte hoy?</p>
+    </div>
+    <div class="chatbot-footer">
+        <input type="text" id="chatbot-input" placeholder="Escribe tu mensaje aquí...">
+        <button id="chatbot-send">Enviar</button>
+    </div>
+</div>
+
 </body>
 </html>

@@ -4,6 +4,12 @@ const aside = document.querySelector("aside");
 // Selección de los elementos del DOM para la búsqueda
 const searchInput = document.querySelector("#search-input");
 const searchButton = document.querySelector("#search-button");
+// Elementos del chatbot
+const chatbotButton = document.querySelector("#chatbot-button");
+const chatbotWindow = document.querySelector("#chatbot-window");
+const chatbotClose = document.querySelector("#chatbot-close");
+const chatbotInput = document.querySelector("#chatbot-input");
+const chatbotSend = document.querySelector("#chatbot-send");
 
 
 
@@ -139,4 +145,22 @@ document.addEventListener("DOMContentLoaded", function () {
     // Prevent interaction with the rest of the page
     overlay.style.display = "block";
     floatingWindow.style.display = "block";
+});
+
+// Abrir y cerrar la ventana del chatbot
+chatbotButton.addEventListener("click", () => {
+    chatbotWindow.style.display = "flex";
+});
+
+chatbotClose.addEventListener("click", () => {
+    chatbotWindow.style.display = "none";
+});
+
+// Lógica para enviar mensajes predeterminados (por el momento)
+chatbotSend.addEventListener("click", () => {
+    const userMessage = chatbotInput.value;
+    if (userMessage.trim() !== "") {
+        alert("Has enviado el mensaje: ${userMessage}");
+        chatbotInput.value = "";  // Limpiar el campo de entrada
+    }
 });
