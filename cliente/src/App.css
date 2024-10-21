@@ -263,3 +263,90 @@ a {
     z-index: 1000; /* Asegúrate de que esté por encima del overlay */
     pointer-events: auto; /* Habilitar interacción en la ventana */
 }
+/*estilos boton whatsapp y chatbot*/
+
+/* Estilos compartidos para los botones flotantes */
+/* Contenedor vertical para los botones */
+.floating-button-container {
+    display: flex;
+    flex-direction: column; /* Alineación vertical */
+    gap: 20px; /* Espaciado entre botones */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1100;
+}
+
+/* Estilos compartidos para los botones flotantes */
+.floating-button {
+    width: 60px; /* Tamaño uniforme */
+    height: 60px;
+    border-radius: 60%; 
+    padding: 0px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--clr-main-light); /* Bordes visibles */
+}
+
+/* Botón de WhatsApp */
+.whatsapp-icon {
+    background-color: var(--clr-main); /* Mismo color de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Redondeado como el botón del ChatBot */
+    width: 60px; /* Mismo tamaño que el botón del ChatBot */
+    height: 60px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra igual que el ChatBot */
+}
+/* Botón de WhatsApp */
+.whatsapp-icon svg {
+    width: 40px; /* Ajusta el tamaño del ancho del ícono */
+    height: 40px; /* Ajusta el tamaño del alto del ícono */
+    color: white; /* Mantiene el color en blanco */
+}
+
+.whatsapp-icon:hover {
+    background-color: var(--clr-main-light);
+    box-shadow: 0px 4px 15px rgba(0, 255, 0, 0.3); /* Sombra verde al pasar el cursor */
+    border-color: var(--clr-main); /* Cambia el color del borde al pasar el cursor */
+}
+
+/* Botón del ChatBot */
+.chat-bot-button {
+    background-color: var(--clr-main);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%; 
+}
+
+.chat-bot-button:hover {
+    background-color: var(--clr-main-light);
+    box-shadow: 0px 4px 15px rgba(0, 255, 0, 0.3); /* Sombra verde al pasar el cursor */
+    border-color: var(--clr-main); /* Cambia el color del borde al pasar el cursor */
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+.floating-button:hover {
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2); /* Sombra más profunda en hover */
+    transform: scale(1.1); /* Efecto de agrandamiento suave */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .floating-button-container {
+        bottom: 10px; /* Ajusta la posición inferior en pantallas más pequeñas */
+        right: 10px;
+    }
+
+    .floating-button {
+        width: 50px;
+        height: 50px;
+    }
+}
+
