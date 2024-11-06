@@ -1,4 +1,4 @@
-const backendDomin = process.env.REACT_APP_BACKEND_URL//"http://localhost:8080"
+const backendDomin = process.env.REACT_APP_BACKEND_URL//"http://localhost:5000"
 
 const SummaryApi = {
     sendVerificationCode: {
