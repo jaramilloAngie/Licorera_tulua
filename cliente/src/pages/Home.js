@@ -9,12 +9,17 @@ const Home = () => {
     {
       couponCode: 'VERANO20',
       discount: 20,
-      description: 'Obtén un 20% de descuento en todos los productos de verano.',
+      description: 'Obtén un 20% de descuento en todos los productos por temporada navideña.',
     },
     {
       couponCode: 'BEBIDAS10',
       discount: 10,
       description: 'Disfruta un 10% de descuento en bebidas sin alcohol.',
+    },
+    {
+      couponCode: 'TULUA70',
+      discount: 30,
+      description: 'Obtén un 30% de descuento en tu próxima compra.',
     },
   ];
 
